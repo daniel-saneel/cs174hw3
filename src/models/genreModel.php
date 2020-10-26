@@ -1,4 +1,5 @@
 <?php
+namespace serverBros\hw3\models\genreModel;
 
 class Genre {
     public $genreName;

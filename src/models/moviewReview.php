@@ -1,4 +1,7 @@
-<?php 
+<?php  
+
+
+namespace serverBros\hw3\models\moviewReview;
 
 class moviewReview {
     public $reviewTitle;
