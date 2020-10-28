@@ -6,6 +6,7 @@ class config {
     const PASSWORD = "password";
     const SERVERNAME = "127.0.0.1:3306";
     const PORT = 3306;
+    const DBNAME=MoviewReviewDB;
 }
 
 ?>
