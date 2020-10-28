@@ -44,7 +44,7 @@ else{
 //primary key id 
 //fields: name
 $createGenreTable = "CREATE TABLE Genres(
-    genreId INT(6) UNSIGNED AUTO_INCREMENT,
+    genreId int NOT NULL AUTO_INCREMENT,
     name varchar(30) NOT NULL,
     PRIMARY KEY(genreId))";
 
@@ -53,7 +53,7 @@ $createGenreTable = "CREATE TABLE Genres(
 //fields: title, content, genreID, date
 //when inserting a review, the genre that it belongs to will be inserted into genreID
 $createReviewTable = "CREATE TABLE Reviews(
-    reviewId INT(6) UNSIGNED AUTO_INCREMENT,
+    reviewId int NOT NULL AUTO_INCREMENT,
     genreId INT(6) UNSIGNED,
     title varchar(30) NOT NULL,
     content TEXT NOT NULL,

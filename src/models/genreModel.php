@@ -26,6 +26,17 @@ class Genre extends Model {
         $insertGenreQuery->execute();
 
     }
+
+    public function deleteGenre(){
+
+        $deleteGenreQuery = $connection->prepare("DELETE FROM Genres WHERE name=(?)");
+        $deleteGenreQuery->bind_param("s",$genreName);
+        $genreName=$this->get_genreName();
+        $insertGenreQuery->execute();
+
+
+
+    }
 }
 
 ?>
