@@ -41,7 +41,6 @@ function fetchGenres(){
     }
     $result-> free_result();
     
-    $connection->close();
 
     return $this->listofGenres;
 }
