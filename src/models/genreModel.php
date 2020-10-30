@@ -34,7 +34,13 @@ class Genre extends Model {
         $genreName=$this->get_genreName();
         $insertGenreQuery->execute();
 
-
+    }
+    //deletes all reviews associated with the current genre
+    public function deleteAllReviews() {
+        $deleteGenreQuery = $connection->prepare("DELETE FROM Reviews WHERE genreName=(?)");
+        $deleteGenreQuery->bind_param("s",$genreName);
+        $genreName=$this->get_genreName();
+        $insertGenreQuery->execute();
 
     }
 }

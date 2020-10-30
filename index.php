@@ -1,3 +1,6 @@
+<?php
+
+?>
 
 <!DOCTYPE html> 
 <div style="border:1px solid black;width:3in;height:3in;margin:.05in;padding:0.25in;">

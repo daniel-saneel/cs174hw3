@@ -54,7 +54,7 @@ $createGenreTable = "CREATE TABLE Genres(
 //when inserting a review, the genre that it belongs to will be inserted into genreID
 $createReviewTable = "CREATE TABLE Reviews(
     reviewId int NOT NULL AUTO_INCREMENT,
-    genreId INT(6) UNSIGNED,
+    genreName varchar(30) NOT NULL,
     title varchar(30) NOT NULL,
     content TEXT NOT NULL,
     insertDate DATE,
